@@ -52,12 +52,29 @@ docker compose up -d --build
 
 Open http://localhost:3000 — the first registered user becomes admin.
 
+### Database & Configuration
+
+**No manual database setup needed.** `docker compose up` starts two containers:
+
+| Container | Image | Port | Purpose |
+|-----------|-------|------|---------|
+| `lumen-db` | postgres:16-alpine | 5432 | PostgreSQL 16, data persisted in `pgdata` volume |
+| `lumen-app` | built from Dockerfile | 3000 | Nuxt 3 SSR app (Nitro) |
+
+On first boot, the app container automatically runs `prisma db push` to create all tables. You do **not** need to install Postgres locally or run migrations manually.
+
+**`.env` is optional.** All third-party credentials (Stripe, Google OAuth, GA4, SEO, brand) are stored in the database and configured through the admin UI at `/dashboard/settings` after login. The `.env` file only holds boot-time connection details — you can skip it entirely for first run.
+
 ### Default Admin
+
+The first user to register automatically becomes admin. For a fresh database, use the seeded admin:
 
 ```
 Email:    admin@example.com
 Password: admin12345
 ```
+
+After login, open `/dashboard/settings` to plug in your own Stripe keys, Google OAuth, and brand info. No code changes required.
 
 ### Project Structure
 
