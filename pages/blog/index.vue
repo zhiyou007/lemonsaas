@@ -9,7 +9,7 @@ const { data } = await useFetch('/api/blog', { key: 'blog' })
     <div class="border-b border-border/60 bg-muted/30">
       <div class="mx-auto max-w-3xl px-4 py-20 sm:px-6">
         <h1 class="text-4xl font-bold tracking-tight">{{ t("nav.blog") }}</h1>
-        <p class="mt-3 text-lg text-muted-foreground">Guides, news and product updates from the Lumen team.</p>
+        <p class="mt-3 text-lg text-muted-foreground">{{ t("blog.subtitle") }}</p>
       </div>
     </div>
     <div class="mx-auto max-w-3xl px-4 py-12 sm:px-6">

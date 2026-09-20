@@ -1,4 +1,5 @@
 export default {
+  d: {  docs_intro: 'Introduction', docs_what: "What's included", docs_quick: 'Quickstart', docs_start: 'Start', docs_next: 'Next steps', docs_auth2: 'Authentication', docs_googlesetup: 'Google OAuth setup', docs_billing2: 'Plan types', docs_free2: 'Free', docs_monthly2: 'Monthly', docs_yearly2: 'Yearly', docs_lifetime2: 'One-time', docs_seo2: 'SEO & Settings', docs_fields: 'Configurable fields', docs_docker2: 'Docker Deployment', docs_prod: 'Production' ,  docs_sec_start: 'Getting Started', docs_sec_core: 'Core', docs_sec_deploy: 'Deploy', docs_intro_body: 'Lumen is a production-ready SaaS starter built on Nuxt 3.', docs_dash: 'Dashboard', docs_live: 'Live'  },
   app: { name: 'Lumen' },
   landing: {
     badge: 'New: multi-region deployment is live',
@@ -70,10 +71,8 @@ export default {
     name: 'Name', email: 'Email', plan: 'Plan', joined: 'Joined', role: 'Role', admin: 'Admin', blog: 'Blog', user: 'User',
     confirmDelete: 'Delete this user?', changePlan: 'Change plan'
   },
-  d: { docs_intro: 'Introduction', docs_what: "What's included", docs_quick: 'Quickstart', docs_start: 'Start', docs_next: 'Next steps', docs_auth2: 'Authentication', docs_googlesetup: 'Google OAuth setup', docs_billing2: 'Plan types', docs_free2: 'Free', docs_monthly2: 'Monthly', docs_yearly2: 'Yearly', docs_lifetime2: 'One-time', docs_seo2: 'SEO & Settings', docs_fields: 'Configurable fields', docs_docker2: 'Docker Deployment', docs_prod: 'Production' },
-  d: { docs_sec_start: 'Getting Started', docs_sec_core: 'Core', docs_sec_deploy: 'Deploy', docs_intro_body: 'Lumen is a production-ready SaaS starter built on Nuxt 3.', docs_dash: 'Dashboard', docs_live: 'Live' },
   legal: { privacy_title: 'Privacy Policy', privacy_updated: 'Last updated: 2026', privacy_p1: 'This Privacy Policy describes how Lumen collects, uses, and discloses your information when you use our services.', privacy_h1: 'Information we collect', privacy_h1d: 'We collect information you provide directly, such as your name, email and billing details.', privacy_h2: 'How we use your information', privacy_h2d: 'We use your information to provide, maintain and improve our services and process payments.', privacy_h3: 'Data protection', privacy_h3d: 'Your data is stored securely. We never sell or share your personal information.', privacy_h4: 'Contact', privacy_h4d: 'If you have questions, contact privacy@example.com.', terms_title: 'Terms of Service', terms_p1: 'Welcome to Lumen. By using this site you agree to the following terms.', terms_h1: 'Use of service', terms_h1d: 'You agree to use this site lawfully and not to disrupt its operation.', terms_h2: 'Limitation of liability', terms_h2d: 'To the extent permitted by law, we are not liable for indirect damages.' },
-  blog: { title: 'Blog Posts', new: '+ New', titleLabel: 'Title', slug: 'Slug', excerpt: 'Excerpt', content: 'Content', published: 'Published', draft: 'Draft', edit: 'Edit', save: 'Save', cancel: 'Cancel', empty: 'No posts yet.' },
+  blog: { subtitle: 'Guides, news and product updates from the Lumen team.', title: 'Blog Posts', new: '+ New', titleLabel: 'Title', slug: 'Slug', excerpt: 'Excerpt', content: 'Content', published: 'Published', draft: 'Draft', edit: 'Edit', save: 'Save', cancel: 'Cancel', empty: 'No posts yet.' },
   set: {
     brand: 'Brand', brandSub: 'Product name and logo, shown on the landing page and console.',
     auth: 'Sign-in methods', authSub: 'Global sign-in configuration status.',

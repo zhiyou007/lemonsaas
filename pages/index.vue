@@ -80,9 +80,10 @@ const faqs = [
           {{ t('landing.heroSub') }}
         </p>
         <div class="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <NuxtLink to="/signup" class="rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-sm hover:opacity-90">{{ t('landing.ctaPrimary') }}</NuxtLink>
-          <NuxtLink to="/login" class="rounded-md border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted">{{ t('landing.ctaDemo') }}</NuxtLink>
+          <NuxtLink to="/signup" class="rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-md hover:shadow-lg hover:-translate-y-0.5">{{ t('landing.ctaPrimary') }} →</NuxtLink>
+          <NuxtLink to="/login" class="rounded-md border border-border bg-card px-6 py-3 text-sm font-semibold hover:bg-muted hover:-translate-y-0.5">{{ t('landing.ctaDemo') }}</NuxtLink>
         </div>
+        <p class="mt-5 text-xs text-muted-foreground">No credit card required · Free 14-day trial · Cancel anytime</p>
 
         <!-- Dashboard mockup -->
         <div class="mx-auto mt-16 max-w-4xl rounded-xl border border-border bg-card p-2 shadow-2xl">

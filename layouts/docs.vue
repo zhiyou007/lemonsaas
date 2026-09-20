@@ -2,16 +2,16 @@
 const { t } = useI18n()
 useHead(() => ({ title: t('nav.docs') + ' — Lumen' }))
 const sections = computed(() => [
-  { title: t('docs_sec_start'), items: [
+  { title: t('d.docs_sec_start'), items: [
     { slug: 'intro', label: t('d.docs_intro') },
     { slug: 'quickstart', label: t('d.docs_quick') },
   ]},
-  { title: t('docs_sec_core'), items: [
+  { title: t('d.docs_sec_core'), items: [
     { slug: 'auth', label: t('d.docs_auth') },
     { slug: 'billing', label: t('d.docs_billing2') },
     { slug: 'seo', label: t('d.docs_seo2') },
   ]},
-  { title: t('docs_sec_deploy'), items: [
+  { title: t('d.docs_sec_deploy'), items: [
     { slug: 'docker', label: t('d.docs_docker2') },
   ]},
 ])

@@ -1,4 +1,5 @@
 export default {
+  d: {  docs_intro: '简介', docs_what: '包含内容', docs_quick: '快速开始', docs_start: '启动', docs_next: '下一步', docs_auth: '认证', docs_googlesetup: 'Google OAuth 设置', docs_billing2: '套餐类型', docs_free: '免费', docs_monthly: '月付', docs_yearly: '年付', docs_lifetime: '买断', docs_seo2: 'SEO 与设置', docs_fields: '可配置字段', docs_docker2: 'Docker 部署', docs_prod: '生产环境' ,  docs_sec_start: '开始', docs_sec_core: '核心', docs_sec_deploy: '部署', docs_intro_body: 'Lumen 是基于 Nuxt 3 的生产级 SaaS 模板。', docs_dash: '仪表盘', docs_live: '在线'  },
   app: { name: 'Lumen' },
   landing: {
     badge: '新功能：多区域部署已上线',
@@ -70,10 +71,8 @@ export default {
     name: '姓名', email: '邮箱', plan: '套餐', joined: '注册时间', role: '角色', admin: '管理员', user: '普通用户',
     confirmDelete: '确定删除该用户？', changePlan: '修改套餐'
   },
-  d: { docs_intro: '简介', docs_what: '包含内容', docs_quick: '快速开始', docs_start: '启动', docs_next: '下一步', docs_auth: '认证', docs_googlesetup: 'Google OAuth 设置', docs_billing2: '套餐类型', docs_free: '免费', docs_monthly: '月付', docs_yearly: '年付', docs_lifetime: '买断', docs_seo2: 'SEO 与设置', docs_fields: '可配置字段', docs_docker2: 'Docker 部署', docs_prod: '生产环境' },
-  d: { docs_sec_start: '开始', docs_sec_core: '核心', docs_sec_deploy: '部署', docs_intro_body: 'Lumen 是基于 Nuxt 3 的生产级 SaaS 模板。', docs_dash: '仪表盘', docs_live: '在线' },
   legal: { privacy_title: '隐私政策', privacy_updated: '最后更新：2026', privacy_p1: '本隐私政策说明 Lumen（"我们"）在你使用本站和服务时如何收集、使用和披露你的信息。', privacy_h1: '我们收集的信息', privacy_h1d: '我们收集你直接提供的信息，例如创建账号或订阅时的姓名、邮箱和账单信息。', privacy_h2: '我们如何使用', privacy_h2d: '我们用你的信息来提供、维护和改进服务，处理支付，并与你沟通。', privacy_h3: '数据保护', privacy_h3d: '你的数据安全存储。我们绝不会将你的个人信息出售或共享给第三方用于营销。', privacy_h4: '联系我们', privacy_h4d: '如有疑问，请发送邮件至 privacy@example.com。', terms_title: '服务条款', terms_p1: '欢迎使用 Lumen。使用本站即表示你同意以下条款。', terms_h1: '使用规范', terms_h1d: '你同意合法合规地使用本站，不干扰其正常运行。', terms_h2: '责任限制', terms_h2d: '在法律允许范围内，我们不对间接损失承担责任。' },
-  blog: { title: '博客文章', new: '新建', titleLabel: '标题', slug: 'URL 别名', excerpt: '摘要', content: '正文', published: '已发布', draft: '草稿', edit: '编辑', save: '保存', cancel: '取消', empty: '暂无文章' },
+  blog: { subtitle: '博客列表', title: '博客文章', new: '新建', titleLabel: '标题', slug: 'URL 别名', excerpt: '摘要', content: '正文', published: '已发布', draft: '草稿', edit: '编辑', save: '保存', cancel: '取消', empty: '暂无文章' },
   set: {
     brand: '品牌', brandSub: '产品名称与 LOGO，展示在落地页和控制台。',
     auth: '登录方式', authSub: '全局登录配置状态。',
