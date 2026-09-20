@@ -1,0 +1,26 @@
+{
+  "name": "lumen-saas",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "start": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.20.0",
+    "bcryptjs": "^2.4.3",
+    "nuxt": "^3.13.0",
+    "stripe": "^22.6.2",
+    "vue": "^3.5.0",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.0",
+    "prisma": "^5.20.0"
+  }
+}
