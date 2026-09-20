@@ -183,6 +183,34 @@ docker compose up -d --build
 
 ---
 
+## Manual Install (without Docker)
+
+Requirements: Node.js 20+, PostgreSQL 14+.
+
+```bash
+# 1. Clone
+git clone https://github.com/zhiyou007/lemonsaas.git
+cd lemonsaas
+
+# 2. Install deps
+npm install
+
+# 3. Create a PostgreSQL database and point DATABASE_URL at it
+echo 'DATABASE_URL="postgresql://user:pass@localhost:5432/lumen"' > .env
+
+# 4. Push schema & generate client
+npx prisma db push
+npx prisma generate
+
+# 5. Build & start
+npm run build
+node .output/server/index.mjs
+```
+
+Open http://localhost:3000. For development, use `npm run dev`.
+
+---
+
 ## Production Deployment
 
 Requirements: a Linux server (2 GB RAM, 1 vCPU), Docker + Docker Compose, and a domain.
