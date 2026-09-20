@@ -4,6 +4,8 @@
 
 > 基于 Nuxt 3 的出海 SaaS 模板：内置 Stripe 支付、Google 登录、中英文 i18n、SEO 全套、后台可视化配置，一条命令 Docker 启动。
 
+![Lumen Landing](docs/screenshots/landing.png)
+
 ---
 
 [English](#english) · [中文](#中文)
