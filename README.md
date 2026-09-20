@@ -183,6 +183,53 @@ docker compose up -d --build
 
 ---
 
+## Production Deployment
+
+Requirements: a Linux server (2 GB RAM, 1 vCPU), Docker + Docker Compose, and a domain.
+
+```bash
+git clone https://github.com/zhiyou007/lemonsaas.git
+cd lemonsaas
+docker compose up -d --build
+```
+
+Open `http://your-server:3000`. The first registered user becomes admin. Then go to `/dashboard/settings` to plug in your live Stripe keys, Google OAuth, and brand.
+
+### Reverse proxy (Nginx + HTTPS)
+
+```nginx
+server {
+    listen 80;
+    server_name your-domain.com;
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+Then `certbot --nginx` for HTTPS. Set Google redirect URI to `https://your-domain/api/auth/callback/google`.
+
+### Operations
+
+```bash
+docker compose logs -f app     # logs
+docker compose restart app     # restart
+docker compose down            # stop (keeps data)
+docker compose down -v         # stop + wipe DB
+```
+
+### Use your own PostgreSQL
+
+The full SQL schema is at `prisma/schema.sql`. If you don't want the bundled DB container, set `DATABASE_URL` in `.env` and run:
+
+```bash
+psql $DATABASE_URL -f prisma/schema.sql
+```
+
+---
+
 ## License
 
 MIT
