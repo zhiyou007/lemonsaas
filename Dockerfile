@@ -18,4 +18,4 @@ ENV NITRO_PORT=3000
 EXPOSE 3000
 
 # Push schema to DB on start (starter-grade), then boot the built server
-CMD ["sh", "-c", "npx prisma db push --skip-generate && node .output/server/index.mjs"]
+CMD ["sh", "-c", "npx prisma db push --skip-generate && npx tsx prisma/seed.ts && node .output/server/index.mjs"]

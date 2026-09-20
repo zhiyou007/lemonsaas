@@ -52,7 +52,14 @@ cp .env.example .env
 docker compose up -d --build
 ```
 
-Open http://localhost:3000 — the first registered user becomes admin.
+Open http://localhost:3000. Log in with the seeded admin account:
+
+```
+Email:    admin@example.com
+Password: admin12345
+```
+
+The first login shows a guided onboarding wizard to configure brand, Google OAuth, and Stripe. All settings are stored in the database — no `.env` edits needed. You can also sign up with any email; the first account is the seeded admin.
 
 ### Database & Configuration
 
